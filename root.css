@@ -1,0 +1,42 @@
+:root {
+    --size-16 : 1rem;
+    --size-18: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1c1c1c;
+}
+
+.display-font {
+    font-family: "Press Start 2P" , cursive;
+}
+
+.pri-font {
+
+}
+
+.sec-font {
+
+}
+
+.ter-font {
+
+}
+
+.heading-1 {
+
+}
+
+.heading-2 {
+
+}
+
+a:link, a:visited , a:hover, a:active {
+    text-decoration: none;
+}

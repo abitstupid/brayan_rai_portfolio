@@ -1,0 +1,51 @@
+<!DOCTPYE HTML>
+<html>
+    <head>
+        <title>Brayan Rai</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width , initial-scale = 1.0">
+        <meta rel="icon" type="image/x-icon" href="">
+        <meta name="author" description ="Brayan Rai">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,300&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="root.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/social-links.css">
+        <link rel="stylesheet" href="/css/about.css">
+        <!-- <link rel="stylesheet" href="/css/matrix-rain.css"> -->
+        <script src="template-engine.js"></script>
+    </head>
+    <body>
+            <header>
+                
+                <div w3-include-html="nav.html" id="nav"></div> 
+
+            </header>
+
+            <main>
+                <section id="hero">
+                    <video id="hero-video" src="assets/hero-vid.mp4" muted autoplay loop></video>
+                    <!-- <div w3-include-html="matrix-rain.html" id="hero-video"></div>  -->
+                    
+
+                    <hgroup>
+                        <h2 class="hero-description">Data Science, python, ML and everything in between</h2>
+                        <h1 class="hero-heading display-font">Brayan Rai</h1>
+                    </hgroup>
+                    <div w3-include-html="social-links.html" id="social-links"></div> 
+
+                </section>
+            </main>
+
+            <footer>
+
+            </footer>
+
+        <script>
+            includeHTML();
+        </script>
+        <!-- <script src="/js/matrix-rain.js"></script> -->
+    </body>
+</html>
