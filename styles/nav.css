@@ -8,11 +8,20 @@ body > header {
 
 #logo {
 	font-size: var(--size-20);
-    color: var(--secondary-black);
+	color: var(--secondary-black);
+	transition-duration: 0.7s;
+
+}
+
+#logo:hover {
+	transition-duration: 0.7s;
+	color: var(--tertiary-blue);
+	letter-spacing: 1px;
+
 }
 
 nav {
-    width: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -36,6 +45,6 @@ nav > ul {
 	color: var(--secondary-black);
 }
 
-#logo:hover , .nav-item:hover{
+.nav-item:hover {
 	color: var(--primary-black);
 }
