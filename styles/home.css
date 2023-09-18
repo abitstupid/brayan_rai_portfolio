@@ -35,6 +35,12 @@ section#hero hgroup h2 span:nth-child(2) {
     font-size: var(--size-20);
 }
 
-
+/*SECTION HEADING */
+.heading-2 {
+	font-size: var(--size-24);
+	margin-bottom: calc(var(--size-16) * 4);
+	color: var(--primary-black);
+	position: relative;
+}
 
 

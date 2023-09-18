@@ -1,17 +1,41 @@
+
+/* ICON  */
+.about-heading::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -32px;
+	height: var(--size-24);
+	width: var(--size-24);
+	background: url(/assets/about-me-icon.png);
+	background-size: contain;
+}
+
+/* GRID CONTAINER */
+
 .about-grid-container {
+	height: auto; /* You can adjust the height as needed */
+
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr 1fr;
-	gap: 20px;
+	row-gap: calc(var(--size-24) * 2);
 	justify-content: center;
 	align-items: center;
-	height: auto; /* You can adjust the height as needed */
+	align-content: center;
 }
 
+/* GRID ITEMS  */
 .about-grid-item {
-	background-color: var(--primary-black);
-	padding: 20px;
+	align-self: center;
+	justify-self: center;
+	background-color: var(--tertiary-black);
+	padding: calc(var(--size-24) * 1.2);
 	text-align: center;
+
+	width: 80%;
+	height: auto;
+	border-radius: calc(var(--size-16) * 0.5);
 }
 
 .about-grid-item:nth-child(1) {
@@ -27,4 +51,38 @@
 .about-grid-item:nth-child(3) {
 	grid-column: 2 / span 1;
 	grid-row: 1 / span 2;
+}
+
+/* CODE SNIPPETS */
+.about-subheading {
+    color: var(--primary-white);
+    font-size: var(--size-16);
+    text-align: left;
+    margin-bottom: calc(var(--size-16) * 0.5);
+}
+.property,
+.property-pair,
+.property-parenthesis,
+.property-name {
+	font-size: var(--size--14);
+	font-family: "Source Code Pro", monospace;
+	text-align: left;
+}
+
+.property {
+	color: var(--secondary-orange);
+
+}
+.property-pair {
+    color: var(--tertiary-blue);
+	margin-left: 15%;
+}
+
+.property-pair:last-of-type{
+    margin-left: auto;
+}
+
+.property-parenthesis,
+.property-value {
+	color: #fcec59;
 }

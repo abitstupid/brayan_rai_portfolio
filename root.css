@@ -1,69 +1,94 @@
 /* VARIABLES */
 :root {
-    --size--12 : 0.75rem;
-    --size-14: 0.875rem;
-    --size-16 : 1rem;
-    --size-20: 1.25rem;
-    --size-24: 1.5rem;
+	--size--12: 0.75rem;
+	--size-14: 0.875rem;
+	--size-16: 1rem;
+	--size-20: 1.25rem;
+	--size-24: 1.5rem;
+	--size-28: 1.75rem;
 
-    --primary-white: #ffffff;
-    --primary-black: #3E3E3E;
-    --secondary-black: #737373;
-    --secondary-blue: #B2C2FF;
-    --secondary-orange: #FFD0D0;
-    --tertiary-blue: #85A0FF;
-
-
-
+	--primary-white: #ffffff;
+	--primary-black: #3e3e3e;
+	--secondary-black: #737373;
+	--secondary-blue: #b2c2ff;
+	--secondary-orange: #ffd0d0;
+	--tertiary-black: #1c1c1c;
+	--tertiary-blue: #85a0ff;
 }
 
+/* SCROLL BAR */
 
-*, *::after,*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body::-webkit-scrollbar {
+	width: calc(var(--size-16) * 0.5);
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px var(--primary-white);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--tertiary-blue);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /* MAX WIDTH OF SECTION */
 .max-width {
-    max-width: 1280px;
-    margin: auto;
+	max-width: 1280px;
+	margin: auto;
+}
+
+/* SECTION MARGIN & PADDING */
+.component-margin {
+	margin-bottom: 64px;
+}
+
+.component-padding {
+    padding: 0 32px 0 32px;
 }
 
 /* LINKS */
-a:link, a:visited , a:hover, a:active {
-    text-decoration: none;
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
 }
-
 
 /* FONTS  */
 
 .logo-font {
-    font-family: 'Abril Fatface', cursive;
+	font-family: "Abril Fatface", cursive;
 }
 
 .heading2-font {
-    font-family: 'Playfair', serif;
+	font-family: "Playfair", serif;
 }
 
-.heading3-font , .body-font {
-    font-family: 'Montserrat', sans-serif !important;
+.heading3-font,
+.body-font {
+	font-family: "Montserrat", sans-serif !important;
 }
 
 .code-font {
-    font-family: 'Source Code Pro', monospace;
+	font-family: "Source Code Pro", monospace;
 }
 
 /* FONT STYLES */
 .medium-font {
-    font-weight: 500;
+	font-weight: 500;
 }
 
 .semi-bold-font {
-    font-weight: 600;
+	font-weight: 600;
 }
 
-
 .bold-font {
-    font-weight: 700;
+	font-weight: 700;
 }

@@ -1,0 +1,12 @@
+
+/* ICON  */
+.project-heading::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -32px;
+	height: var(--size-24);
+	width: var(--size-24);
+	background: url(/assets/projects.png);
+	background-size: contain;
+}
