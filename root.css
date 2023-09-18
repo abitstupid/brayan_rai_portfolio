@@ -24,6 +24,11 @@
     padding: 0;
 }
 
+/* MAX WIDTH OF SECTION */
+.max-width {
+    max-width: 1280px;
+    margin: auto;
+}
 
 /* LINKS */
 a:link, a:visited , a:hover, a:active {
