@@ -1,51 +1,74 @@
 <!DOCTPYE HTML>
 <html>
-    <head>
-        <title>Brayan Rai</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width= device-width , initial-scale = 1.0">
-        <meta rel="icon" type="image/x-icon" href="">
-        <meta name="author" description ="Brayan Rai">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,300&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="root.css">
-        <link rel="stylesheet" href="/css/home.css">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/social-links.css">
-        <link rel="stylesheet" href="/css/about.css">
-        <!-- <link rel="stylesheet" href="/css/matrix-rain.css"> -->
-        <script src="template-engine.js"></script>
-    </head>
-    <body>
-            <header>
-                
-                <div w3-include-html="nav.html" id="nav"></div> 
+	<head>
+		<title>Brayan Rai</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width= device-width , initial-scale = 1.0" />
+		<meta rel="icon" type="image/x-icon" href="" />
+		<meta name="author" description="Brayan Rai" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair:ital,opsz,wght@0,5..1200,600;0,5..1200,700;1,5..1200,600;1,5..1200,700&family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="root.css" />
+		<link rel="stylesheet" href="styles/nav.css" />
+		<link rel="stylesheet" href="/styles/home.css" />
+		<link rel="stylesheet" href="styles/social-links.css" />
+		<link rel="stylesheet" href="/styles/about.css" />
+		<!-- <link rel="stylesheet" href="/css/matrix-rain.css"> -->
+		<script src="template-engine.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href=""
+					><h2 id="logo" class="logo-font medium-font">brayan rai</h2>
+				</a>
+				<ul>
+					<a href="#hero" class="nav-link nav-link-1">
+						<li class="nav-item nav-item-1 body-font medium-font">projects</li>
+					</a>
+					<a href="" class="nav-link nav-link-2 body-font medium-font">
+						<li class="nav-item nav-item-2">about</li>
+					</a>
+					<a href="" class="nav-link nav-link-3">
+						<li class="nav-item nav-item-3 body-font medium-font">contact</li>
+					</a>
+					<a href="" class="nav-link nav-link-4">
+						<li class="nav-item nav-item-4 body-font medium-font">
+							side projects
+						</li>
+					</a>
+				</ul>
+			</nav>
+		</header>
 
-            </header>
+		<main>
+			<section id="hero">
+				<video
+					id="hero-video"
+					src="assets/hero-vid.mp4"
+					autoplay
+					loop
+					muted
+				></video>
 
-            <main>
-                <section id="hero">
-                    <video id="hero-video" src="assets/hero-vid.mp4" autoplay loop muted></video>
-                    <!-- <div w3-include-html="matrix-rain.html" id="hero-video"></div>  -->
-                    
+				<hgroup>
+					<h2 class="hero-description code-font medium-font">
+						<span>data science, python, ML</span>
+						<span>& everything in between</span>
+					</h2>
+				</hgroup>
+			</section>
 
-                    <hgroup>
-                        <h2 class="hero-description">Data Science, python, ML and everything in between</h2>
-                        <h1 class="hero-heading display-font">Brayan Rai</h1>
-                    </hgroup>
-                    <div w3-include-html="social-links.html" id="social-links"></div> 
+			<section id="about"></section>
+		</main>
 
-                </section>
-            </main>
+		<footer></footer>
 
-            <footer>
-
-            </footer>
-
-        <script>
-            includeHTML();
-        </script>
-        <!-- <script src="/js/matrix-rain.js"></script> -->
-    </body>
+		<script src="scripts/script.js"></script>
+		<!-- <script src="/js/matrix-rain.js"></script> -->
+	</body>
 </html>
