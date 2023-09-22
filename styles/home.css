@@ -20,18 +20,23 @@ section#hero #hero-video {
 }
 
 section#hero hgroup {
-	color: var(--primary-white);
 	letter-spacing: 1px;
 	text-align: center;
+
+	position: relative;
+	top: -8%;
 }
 
 section#hero hgroup h2 span:nth-child(1) {
 	font-size: var(--size-24);
+	background-color: var(--secondary-orange);
+	color: var(--primary-black);
+
 }
 
 section#hero hgroup h2 span:nth-child(2) {
 	display: block;
-	color: var(--secondary-orange);
+	color: var(--secondary-black);
 	font-size: var(--size-20);
 }
 
@@ -41,4 +46,18 @@ section#hero hgroup h2 span:nth-child(2) {
 	margin-bottom: calc(var(--size-16) * 4);
 	color: var(--primary-black);
 	position: relative;
+}
+
+#matrix-rain-canvas {
+	display: block;
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+
+	object-fit: cover;
 }

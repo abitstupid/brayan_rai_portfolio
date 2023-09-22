@@ -40,8 +40,9 @@
 		<link rel="stylesheet" href="/styles/about.css" />
 		<link rel="stylesheet" href="/styles/projects.css" />
 		<link rel="stylesheet" href="/styles/contact.css" />
-		<!-- <link rel="stylesheet" href="/css/matrix-rain.css"> -->
-		<script src="template-engine.js"></script>
+		<script src="scripts/script.js" defer></script>
+		<script src="scripts/matrix-rain.js" defer></script>
+
 	</head>
 	<body>
 		<header class="max-width">
@@ -51,10 +52,10 @@
 				</a>
 				<ul>
 					<a href="#hero" class="nav-link nav-link-1">
-						<li class="nav-item nav-item-1 body-font medium-font">projects</li>
+						<li class="nav-item nav-item-1 body-font medium-font">about</li>
 					</a>
 					<a href="" class="nav-link nav-link-2 body-font medium-font">
-						<li class="nav-item nav-item-2">about</li>
+						<li class="nav-item nav-item-2">projects</li>
 					</a>
 					<a href="" class="nav-link nav-link-3">
 						<li class="nav-item nav-item-3 body-font medium-font">contact</li>
@@ -70,13 +71,19 @@
 
 		<main>
 			<section id="hero" class="component-margin">
-				<video
+				<!-- <video
 					id="hero-video"
 					src="assets/hero-vid.mp4"
 					autoplay
 					loop
 					muted
-				></video>
+				></video> -->
+
+				<article id="matrix-rain">
+					<canvas id="matrix-rain-canvas">
+            
+					</canvas>
+				</article>
 
 				<hgroup>
 					<h1 id="main-heading"></h1>
@@ -294,7 +301,6 @@
 
 		<footer></footer>
 
-		<script src="scripts/script.js"></script>
 		<!-- <script src="/js/matrix-rain.js"></script> -->
 	</body>
 </html>

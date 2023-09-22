@@ -39,9 +39,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 *::selection {
-	background-color: var(--secondary-orange);
+	background-color: var(--secondary-blue);
 	color: var(--primary-black);
 }
+
 /* MAX WIDTH OF SECTION */
 .max-width {
 	max-width: 1280px;
