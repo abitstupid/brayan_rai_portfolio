@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 
 /* MAX WIDTH OF SECTION */
 .max-width {
-	max-width: 1280px;
+	max-width: 1200px;
 	margin: auto;
 }
 
@@ -112,3 +112,28 @@ a:active {
 	white-space: nowrap !important;
 	border: 0 !important;
 }
+
+
+
+@media screen and (max-width: 1200px){
+	.max-width {
+		max-width: 990px;
+		margin: auto;
+	}	
+}
+
+
+@media screen and (max-width: 992px){
+	
+}
+
+
+@media screen and (max-width: 768px){
+	
+}
+
+
+@media screen and (max-width: 576px){
+	
+}
+
