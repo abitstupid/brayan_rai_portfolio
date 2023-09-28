@@ -1,3 +1,7 @@
+li.nav-item:hover::after {
+	left: 50%;
+}
+
 /* ICON  */
 .about-heading::before {
 	content: "";
@@ -96,7 +100,6 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		row-gap: calc(var(--size-24));
-		
 	}
 
 	/* GRID ITEMS  */
@@ -124,4 +127,16 @@
 }
 
 @media screen and (max-width: 576px) {
+	#about {
+		padding: 0;
+	}
+
+	.about-heading {
+		margin-left: 32px;
+		margin-right: 32px;
+	}
+
+	.about-grid-item {
+		width: 100%;
+	}
 }

@@ -162,9 +162,18 @@ section#projects
 }
 
 @media screen and (max-width: 576px) {
+	#projects {
+		padding: 0;
+	}
+
+	.project-heading {
+		margin-left: 32px;
+		margin-right: 32px;
+	}
+
 	.project-item-banner {
 		height: 250px;
-		background-size: auto 0%;
+		background-size: 0 0;
 	}
 
 	.project-item {
@@ -172,12 +181,11 @@ section#projects
 	}
 
 	.project-item-img-container {
-		height: 210px;
-		
+		height: 180px;
 	}
-	
+
 	.project-item-text-container {
-		height: auto;
+		height: 110px;
 	}
 
 	.banner-text-container {

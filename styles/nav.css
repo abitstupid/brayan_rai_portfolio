@@ -8,16 +8,15 @@ body > header {
 
 #logo {
 	font-size: var(--size-20);
+	text-align: center;
 	color: var(--secondary-black);
 	transition-duration: 0.7s;
-
 }
 
 #logo:hover {
 	transition-duration: 0.7s;
 	color: var(--tertiary-blue);
 	letter-spacing: 1px;
-
 }
 
 nav {
@@ -38,13 +37,48 @@ nav > ul {
 	column-gap: 4rem;
 }
 
-.nav-item {
+li.nav-item {
 	list-style-type: none;
 	font-style: normal;
 	font-size: var(--size-14);
 	color: var(--secondary-black);
+
+	transition: 1s;
+
+	position: relative;
 }
 
-.nav-item:hover {
+li.nav-item:hover {
 	color: var(--primary-black);
+}
+
+li.nav-item::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: -60vw;
+	z-index: -1;
+
+	transform: translate(-50%, 0);
+
+	width: 200%;
+	height: 6px;
+
+	border-radius: 0;
+	transition: 0.5s ease-in-out;
+}
+
+li.nav-item:hover::after {
+	left: 50%;
+	background-color: var(--tertiary-blue);
+
+	width: 6px;
+	border-radius: 50%;
+}
+@media screen and (max-width: 576px) {
+	.nav ul {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
 }

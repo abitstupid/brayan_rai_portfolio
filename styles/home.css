@@ -31,7 +31,6 @@ section#hero hgroup h2 span:nth-child(1) {
 	font-size: var(--size-24);
 	background-color: var(--secondary-orange);
 	color: var(--primary-black);
-
 }
 
 section#hero hgroup h2 span:nth-child(2) {
@@ -62,23 +61,20 @@ section#hero hgroup h2 span:nth-child(2) {
 	object-fit: cover;
 }
 
-
-@media screen and (max-width: 1200px){
-	
+@media screen and (max-width: 1200px) {
+	body {
+		margin: auto var(--size-24) auto var(--size-24);
+	}
 }
 
-
-@media screen and (max-width: 992px){
-	
+@media screen and (max-width: 992px) {
 }
 
-
-@media screen and (max-width: 768px){
-	
+@media screen and (max-width: 768px) {
 }
 
-
-@media screen and (max-width: 576px){
-	
+@media screen and (max-width: 590px) {
+	body {
+		margin: auto var(--size-16) auto var(--size-16);
+	}
 }
-
