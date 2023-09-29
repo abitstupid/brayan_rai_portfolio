@@ -1,0 +1,213 @@
+<!DOCTPYE HTML>
+<html>
+	<head>
+		<title>Brayan Rai</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width= device-width , initial-scale = 1.0" />
+		<meta rel="icon" type="image/x-icon" href="" />
+		<meta name="author" description="Brayan Rai" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair:ital,opsz,wght@0,5..1200,600;0,5..1200,700;1,5..1200,600;1,5..1200,700&family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- FAVICON -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+		<!--  -->
+		<link rel="stylesheet" href="root.css" />
+		<link rel="stylesheet" href="styles/nav.css" />
+		<link rel="stylesheet" href="/styles/home.css" />
+		<link rel="stylesheet" href="styles/social-links.css" />
+		<link rel="stylesheet" href="/styles/projects.css" />
+		<link rel="stylesheet" href="/styles/project-content.css" />
+		<link rel="stylesheet" href="/styles/contact.css" />
+		<link rel="stylesheet" href="/styles/footer.css" />
+		<script src="scripts/script.js" defer></script>
+	</head>
+	<body>
+		<header class="max-width">
+			<nav class="nav">
+				<a href="./index.html"
+					><h2 id="logo" class="logo-font medium-font">brayan rai</h2>
+				</a>
+				<ul>
+					<a href="./index.html#about" class="nav-link nav-link-1">
+						<li class="nav-item nav-item-1 body-font medium-font">about</li>
+					</a>
+					<a
+						href="./index.html#projects"
+						class="nav-link nav-link-2 body-font medium-font"
+					>
+						<li class="nav-item nav-item-2">projects</li>
+					</a>
+					<a href="./index.html#contact" class="nav-link nav-link-3">
+						<li class="nav-item nav-item-3 body-font medium-font">contact</li>
+					</a>
+					<a href="./sideprojects.html" class="nav-link nav-link-4">
+						<li class="nav-item nav-item-4 body-font medium-font">
+							side projects
+						</li>
+					</a>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<p id="breadcrums" class="semi-bold-font body-font max-width">
+				<a href="index.html">Home</a> >
+				<a href="index.html#projects">Projects</a> >
+				<a href="home-banner-project.html">Pythion Project</a>
+			</p>
+			<section
+				id="home-banner-project"
+				class="project-content-banner max-width component-margin component-padding"
+			>
+				<div class="project-item-container">
+					<div class="project-item-banner">
+						<div class="banner-text-container banner-img-container"></div>
+					</div>
+				</div>
+			</section>
+
+			<article
+				id="project-content"
+				class="max-width component-margin component-padding"
+			>
+				<header class="project-content-card component-margin">
+					<!-- <h3 class="project-content-heading heading2-font medium-font">
+						Python - Data Science Project Ine
+					</h3> -->
+
+					<div class="project-content-card-container">
+						<div class="project-card-text">
+							<h2 class="project-content-heading heading2-font medium-font">
+								Python - Data Science Project
+							</h2>
+							<p class="body-font">
+								A priijwct about what it does and descriptioin A priijwct about
+								what it does and descriptioin
+							</p>
+						</div>
+						<div class="project-card-icon-container">
+							<span class="project-card-icon"
+								><img src="assets/github-icon.svg" alt=""
+							/></span>
+
+							<p class="project-card-date-text body-font">September 12,2023</p>
+						</div>
+					</div>
+				</header>
+
+				<main id="project-content-article">
+					<div id="project-content-display-img-container">
+						<img
+							src="assets/project-content-images.png"
+							alt=""
+							id="project-content-display-img"
+						/>
+					</div>
+				</main>
+			</article>
+
+			<!-- CONTACT -->
+			<section
+				id="contact"
+				class="max-width component-margin component-padding"
+			>
+				<h2
+					class="heading-2 contact-heading heading2-font bold-font component-margin"
+				>
+					Contact Me
+				</h2>
+
+				<form
+					action=""
+					id="contact-form"
+					class="contact-form-home"
+					method="get"
+				>
+					<label for="email" id="email-label" class="visually-hidden"
+						>E-mail</label
+					>
+					<input
+						type="email"
+						name="email"
+						id="email-input"
+						class="body-font"
+						placeholder="Write your email here..."
+					/>
+
+					<label for="message" id="message-label" class="visually-hidden"
+						>Message</label
+					>
+					<textarea
+						name="message"
+						id="message-text"
+						class="body-font"
+						placeholder="Write your message here..."
+					></textarea>
+
+					<button
+						type="submit"
+						id="submit-contact"
+						class="body-font semi-bold-font"
+					>
+						Shoot it
+					</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-content-container max-width">
+				<div class="footer-text">
+					<p class="copyright-text body-font">
+						Copyright &copy; 2019. All rights reserved.
+					</p>
+					<p class="footer-tagline heading2-font">
+						Torture the data and it’ll confess to anything.
+					</p>
+				</div>
+				<div class="footer-links">
+					<div>
+						<span>
+							<img src="assets/footer-git-icon.svg" alt="" />
+						</span>
+						<span>
+							<img src="assets/footer-insta-icon.svg" alt="" />
+						</span>
+						<span>
+							<img src="assets/footer-linkedin-icon.svg" alt="" />
+						</span>
+					</div>
+					<p class="footer-name body-font">Brayan Rai. 2023. Enjoy You Life</p>
+				</div>
+			</div>
+
+			<div id="pikachu">
+				<img src="assets/pikachu-running.gif" />
+			</div>
+		</footer>
+
+		<!-- <script src="/js/matrix-rain.js"></script> -->
+	</body>
+</html>

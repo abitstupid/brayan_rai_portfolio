@@ -83,6 +83,10 @@ section#projects
 	flex-wrap: wrap;
 }
 
+.project-item-half-container a {
+	flex: 1;
+}
+
 .project-item {
 	flex: 1;
 	display: flex;
@@ -94,6 +98,14 @@ section#projects
 
 	background-color: var(--secondary-orange);
 	border-radius: var(--size-12);
+}
+
+.project-item1 {
+	background-color: var(--secondary-orange);
+}
+
+.project-item2 {
+	background-color: var(--secondary-blue);
 }
 
 .project-item-img-container {
@@ -142,7 +154,7 @@ section#projects
 
 @media screen and (max-width: 1200px) {
 	.banner-text-container {
-		height: auto !important;
+		height: auto;
 	}
 }
 
@@ -150,14 +162,15 @@ section#projects
 }
 
 @media screen and (max-width: 768px) {
-	.project-item {
+	.project-item,
+	.project-item-half-container a {
 		flex-basis: 100%;
 	}
 
 	.banner-text-container {
 		left: 10%;
 
-		width: 80% !important;
+		width: 80%;
 	}
 }
 

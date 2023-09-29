@@ -1,0 +1,146 @@
+footer {
+	height: 150px;
+	width: 100%;
+	background: var(--tertiary-blue);
+	position: relative;
+}
+
+.footer-content-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+	height: 100%;
+
+	font-size: var(--size-12);
+}
+
+.footer-text,
+.footer-links {
+	font-size: inherit;
+}
+
+.copyright-text {
+	font-size: inherit;
+}
+
+.footer-tagline {
+	font-size: var(--size-20);
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-12);
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-links > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--size-12);
+}
+
+.footer-links > div > span {
+	display: block;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 32px;
+	width: 32px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-links > div > span > img {
+	display: block;
+	height: 32px;
+	width: 32px;
+}
+
+.footer-links > div > span:nth-child(3) > img {
+	display: block;
+	height: 28;
+	width: 28;
+}
+
+.footer-name {
+	font-size: inherit;
+}
+
+#pikachu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	animation: run-pikachu 10s infinite linear, rotate-pikachu 10s infinite linear;
+
+	height: calc(var(--size-20) * 4);
+	width: calc(var(--size-20) * 4);
+}
+
+#pikachu img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@keyframes run-pikachu {
+	0% {
+		left: 0;
+	}
+
+	50% {
+		left: calc(100% - 6.5rem);
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes rotate-pikachu {
+	0% {
+		transform: scaleX(1);
+	}
+
+	49.9% {
+		transform: scaleX(1);
+	}
+
+	50% {
+		transform: scaleX(-1);
+	}
+
+	100% {
+		transform: scaleX(-1);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	footer {
+		width: 100vw;
+
+		margin-left: -24px;
+		padding: 24px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 590px) {
+	footer {
+		margin-left: -16px;
+		padding: 16px;
+	}
+}
